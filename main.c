@@ -21,6 +21,7 @@ int get_max(int a, int b, int c)
 }
 int main()
 {
+    setlocale(LC_ALL, "RUS");
     int a;
     int b;
     int c;
@@ -31,7 +32,7 @@ int main()
     scanf("%d", &b);
     printf("Введите значение c:");
     scanf("%d", &c);
-    max_result = get_max(a,b,c);
+    max_result = get_max(a, b, c);
     printf("Максимальное число: %d\n", max_result);
     return 0;
 }
